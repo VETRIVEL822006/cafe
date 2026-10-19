@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean & Bite Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>☕ Bean & Bite</h1>
+    <p>Fresh food. Happy moments.</p>
+
+    <nav>
+      <button id="customerTab">Customer Menu</button>
+      <button id="ownerTab">Kitchen Dashboard</button>
+    </nav>
+    <p id="connection">Connecting to server...</p>
+  </header>
+
+  <main>
+    <section id="customerSection">
+      <h2>Our Menu</h2>
+      <div id="menu" class="menu-grid"></div>
+
+      <h2>Your Cart</h2>
+      <div id="cart"></div>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button id="placeOrder">Place Order</button>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section id="ownerSection" hidden>
+      <h2>Kitchen Orders</h2>
+      <button id="refreshOrders">Refresh Orders</button>
+      <div id="orders"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Bean & Bite Cafe · Learning project</p>
+  </footer>
+</body>
+</html>
